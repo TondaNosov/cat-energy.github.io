@@ -1,0 +1,18 @@
+.page-header {
+    min-width: 320px;
+}
+
+.page-header__wrapper {
+    height: 65px;
+    padding-left: 20px;
+    padding-top: 11px;
+
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__logoname {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 24px;
+}
