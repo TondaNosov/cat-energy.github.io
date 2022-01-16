@@ -48,8 +48,12 @@
       <section class="main-banner">
         <h2 class="main-banner__title">Функциональное<br> питание для котов</h2>
         <p class="main-banner__slogan">Занялся собой? Займись котом!</p>
-        <img class="main-banner__image" src="img/index-banner-mobile.png" width="280" height="270" alt="Упаковка Can Energy Pro, 500 гр.">
-        <a class="main-banner__button button" href="program.html">Подобрать программу</a>
+        <picture class="main-banner__image">
+          <source media="(min-width: 1250px)" srcset="img/index-banner.png" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="img/index-banner-tablet.jpg" width="709" height="609">
+          <img src="img/index-banner-mobile.png" width="280" height="270" alt="Упаковка Can Energy Pro, 500 гр.">
+        </picture>
+        <a class="main-banner__button" href="program.html">Подобрать программу</a>
       </section>
       <!-- 
       <section class="catalog-categories">
