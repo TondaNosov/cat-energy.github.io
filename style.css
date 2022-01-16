@@ -13,15 +13,6 @@ ol {
   list-style-type: none;
 }
 
-body {
-  max-width: 1200px;
-  padding: 0;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Oswald', sans-serif;
-}
-
 button {
   border: none;
   background-color: transparent;
@@ -32,27 +23,45 @@ a {
   color: black;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+body {
+  max-width: 1200px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Oswald', sans-serif;
+}
+
+@media (min-width: 1250px) {
+  body {
+    background-image: url(../img/index-background-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: 50vw 0;
+  }
 }
 
 @media (max-width: 767px) {
   .page-header {
     min-width: 320px;
   }
-  .page-header__logo {
-    display: block;
+  .page-header__wrapper {
     height: 65px;
     padding-left: 20px;
     padding-top: 11px;
-    border-bottom: 1px solid #e6e6e6;
   }
   .page-header__logoname {
     position: absolute;
@@ -62,7 +71,7 @@ a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1249px) {
   .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -73,9 +82,31 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 708px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 24px;
-    padding-left: 30px;
-    padding-right: 30px;
+  }
+  .page-header__logoname {
+    display: none;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 54px;
   }
   .page-header__logoname {
     display: none;
@@ -90,13 +121,39 @@ a {
     position: absolute;
     right: 20px;
     top: -42px;
-    width: 24px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+  }
+  .main-nav--closed .main-nav__toggle {
     background-image: url(../../img/mobile-menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .main-nav--opened .main-nav__toggle {
+    background-image: url(../../img/m-close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__list {
+    display: block;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1249px) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1250px) {
   .main-nav__toggle {
     display: none;
   }
@@ -112,6 +169,12 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .site-list__item {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .site-list__item:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
   .site-list__link {
     display: block;
     padding-top: 22px;
@@ -121,12 +184,11 @@ a {
     line-height: 20px;
     text-align: center;
     text-transform: uppercase;
-    color: #222222;
-    border-bottom: 1px solid #e6e6e6;
+    color: #111111;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1249px) {
   .site-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -148,7 +210,34 @@ a {
     text-transform: uppercase;
     color: #222222;
   }
-  .site-list__item--active .site-list__link {
+  .site-list__item--active a {
     border-bottom: 2px solid #68b738;
+  }
+}
+
+@media (min-width: 1250px) {
+  .site-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .site-list__link {
+    display: block;
+    margin-left: 36px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .site-list__item--active a {
+    border-bottom: 2px solid #ffffff;
   }
 }
