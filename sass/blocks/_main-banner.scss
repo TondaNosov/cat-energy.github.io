@@ -1,0 +1,45 @@
+@media (max-width: $tablet-width - 1) {
+  
+  .main-banner {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    text-align: center;
+
+    background-image: url(../../img/index-background-mobile.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+  }
+
+  .main-banner__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    
+    font-size: 36px;
+    line-height: 37px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .main-banner__slogan {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .main-banner__image {
+    margin-top: 30px;
+  }
+  .main-banner__button {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
