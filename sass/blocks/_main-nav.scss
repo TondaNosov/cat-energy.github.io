@@ -1,5 +1,4 @@
-@media (max-width: $tablet-width - 1) {
-
+@media (max-width: ($tablet-width - 1)) {
     .main-nav {
         position: relative;
     }
@@ -34,15 +33,13 @@
     }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-
+@media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
     .main-nav__toggle {
         display: none;
     }
 }
 
 @media (min-width: $desktop-width) {
-
     .main-nav__toggle {
         display: none;
     }

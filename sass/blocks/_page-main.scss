@@ -13,3 +13,11 @@
     margin-right: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
