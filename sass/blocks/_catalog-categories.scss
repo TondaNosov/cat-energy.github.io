@@ -1,0 +1,320 @@
+@media (max-width: ($tablet-width - 1)) {
+  .catalog-categories {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin-top: 20px;
+  }
+  .catalog-categories__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .catalog-categories__item {
+    padding: 20px;
+    margin-bottom: 20px;
+
+    background-color: #f2f2f2;
+  }
+  .catalog-categories__title {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    padding-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 400;
+    color: $text-color;
+    text-transform: uppercase;
+  }
+  .catalog-categories__title::before {
+    content: "";
+
+    position: absolute;
+    left: 0px;
+    top: -6px;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background-color: $main-color;
+  }
+  .catalog-categories__title::after {
+    content: "";
+
+    position: absolute;
+
+    background-repeat: no-repeat;
+  }
+  .catalog-categories__title--slim::after {
+    left: 6px;
+    top: -9px;
+
+    width: 35px;
+    height: 49px;
+
+    background-image: url(../../img/cat_stand.png);
+  }
+  .catalog-categories__title--pro::after {
+    left: -8px;
+    top: 3px;
+
+    width: 67px;
+    height: 28px;
+
+    background-image: url(../../img/cat_go.png);
+  }
+    .catalog-categories__text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    
+    font-family:Arial, Helvetica, sans-serif; // Изменить шрифт на Arial MT
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #444444;
+  }
+  .catalog-categories__link {
+    position: relative;
+
+    display: block;
+    padding-top: 20px;
+
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: $text-color;
+    text-transform: uppercase;
+
+    border-top: 1px solid #dadada;
+  }
+  .catalog-categories__link::after {
+    content: "";
+    width: 24px;
+    height: 11px;
+
+    position: absolute;
+    top: 23px;
+    left: 95px;
+
+    background-image: url(../../img/right-arrow.png);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
+  .catalog-categories__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .catalog-categories__item {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 315px;
+
+    margin-bottom: 30px;
+
+    background-color: #f2f2f2;
+  }
+  .catalog-categories__title {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+
+    font-size: 36px;
+    line-height: 37px;
+    font-weight: 400;
+    color: $text-color;
+    text-transform: uppercase;
+  }
+  .catalog-categories__title::before {
+    content: "";
+
+    position: absolute;
+    left: 400px;
+    top: 15px;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    background-color: $main-color;
+  }
+  .catalog-categories__title::after {
+    content: "";
+
+    position: absolute;
+
+    background-repeat: no-repeat;
+  }
+  .catalog-categories__title--slim::after {
+    left: 430px;
+    top: 5px;
+
+    width: 140px;
+    height: 194px;
+
+    background-image: url(../../img/cat_stand_big.png);
+  }
+  .catalog-categories__title--pro::after {
+    left: 360px;
+    top: 65px;
+
+    width: 268px;
+    height: 112px;
+
+    background-image: url(../../img/cat_go_big.png);
+  }
+    .catalog-categories__text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+    
+    font-family:Arial, Helvetica, sans-serif; // Изменить шрифт на Arial MT
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #444444;
+  }
+  .catalog-categories__link {
+    position: relative;
+    display: block;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $text-color;
+    text-transform: uppercase;
+  }
+  .catalog-categories__link::after {
+    content: "";
+    width: 24px;
+    height: 11px;
+
+    position: absolute;
+    top: 6px;
+    left: 125px;
+
+    background-image: url(../../img/right-arrow.png);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-categories {
+    margin-top: 270px;
+  }
+  .catalog-categories__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .catalog-categories__item {
+    width: 570px;
+
+    padding-top: 80px;
+    padding-bottom: 60px;
+    padding-left: 54px;
+    padding-right: 54px;
+
+    background-color: #f2f2f2;
+  }
+  .catalog-categories__title {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    padding-left: 160px;
+    margin-bottom: 70px;
+
+    font-size: 36px;
+    line-height: 37px;
+    font-weight: 400;
+    color: $text-color;
+    text-transform: uppercase;
+  }
+  .catalog-categories__title::before {
+    content: "";
+
+    position: absolute;
+    left: 0px;
+    top: -28px;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    background-color: $main-color;
+  }
+  .catalog-categories__title::after {
+    content: "";
+
+    position: absolute;
+
+    background-repeat: no-repeat;
+  }
+  .catalog-categories__title--slim::after {
+    left: 17px;
+    top: -32px;
+
+    width: 70px;
+    height: 97px;
+
+    background-image: url(../../img/cat_stand_big.png);
+    background-size: contain;
+  }
+  .catalog-categories__title--pro::after {
+    left: -17px;
+    top: -5px;
+
+    width: 134px;
+    height: 56px;
+
+    background-image: url(../../img/cat_go_big.png);
+    background-size: contain;
+
+  }
+    .catalog-categories__text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    
+    font-family:Arial, Helvetica, sans-serif; // Изменить шрифт на Arial MT
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #444444;
+  }
+  .catalog-categories__link {
+    position: relative;
+
+    display: block;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $text-color;
+    text-transform: uppercase;
+  }
+  .catalog-categories__link::after {
+    content: "";
+    width: 24px;
+    height: 11px;
+
+    position: absolute;
+    top: 6px;
+    left: 125px;
+
+    background-image: url(../../img/right-arrow.png);
+    background-repeat: no-repeat;
+  }
+}
