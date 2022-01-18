@@ -38,7 +38,7 @@ a {
 }
 
 body {
-  max-width: 1200px;
+  max-width: 1220px;
   padding: 0;
   margin: 0;
   margin-left: auto;
@@ -105,7 +105,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 1200px;
+    width: 1220px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 54px;
@@ -691,5 +691,257 @@ body {
     left: 125px;
     background-image: url(../../img/right-arrow.png);
     background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #111111;
+  }
+  .advantages {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .advantages__item {
+    position: relative;
+    padding-left: 78px;
+    margin-bottom: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #444444;
+  }
+  .advantages__item::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+  }
+  .advantages__item::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .advantages__item--eco::after {
+    top: -2px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../img/eco-icon.png);
+  }
+  .advantages__item--format::after {
+    top: -2px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../img/format-icon.png);
+  }
+  .advantages__item--food::after {
+    top: -2px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../img/food-icon.png);
+  }
+  .advantages__item--time::after {
+    top: -2px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../img/time-icon.png);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1249px) {
+  .advantages__title {
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    margin-bottom: 65px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #111111;
+  }
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .advantages__item {
+    position: relative;
+    width: 251px;
+    margin-right: 80px;
+    padding-top: 115px;
+    margin-bottom: 135px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #444444;
+  }
+  .advantages__item::before {
+    position: absolute;
+    top: -39px;
+    left: 120px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+  .advantages__item--eco::before {
+    content: "1";
+  }
+  .advantages__item--format::before {
+    content: "2";
+  }
+  .advantages__item--food::before {
+    content: "3";
+  }
+  .advantages__item--time::before {
+    content: "4";
+  }
+  .advantages__item::after {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .advantages__item--eco::after {
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    background-image: url(../../img/eco-icon.png);
+  }
+  .advantages__item--format::after {
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    background-image: url(../../img/format-icon.png);
+  }
+  .advantages__item--food::after {
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    background-image: url(../../img/food-icon.png);
+  }
+  .advantages__item--time::after {
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    background-image: url(../../img/time-icon.png);
+  }
+}
+
+@media (min-width: 1250px) {
+  .advantages__title {
+    padding: 0;
+    margin: 0;
+    padding-top: 80px;
+    margin-bottom: 65px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #111111;
+  }
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .advantages__item {
+    position: relative;
+    width: 251px;
+    padding-top: 115px;
+    margin-bottom: 135px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #444444;
+  }
+  .advantages__item::before {
+    position: absolute;
+    top: -39px;
+    left: 120px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+  .advantages__item--eco::before {
+    content: "1";
+  }
+  .advantages__item--format::before {
+    content: "2";
+  }
+  .advantages__item--food::before {
+    content: "3";
+  }
+  .advantages__item--time::before {
+    content: "4";
+  }
+  .advantages__item::after {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .advantages__item--eco::after {
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    background-image: url(../../img/eco-icon.png);
+  }
+  .advantages__item--format::after {
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    background-image: url(../../img/format-icon.png);
+  }
+  .advantages__item--food::after {
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    background-image: url(../../img/food-icon.png);
+  }
+  .advantages__item--time::after {
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    background-image: url(../../img/time-icon.png);
   }
 }
