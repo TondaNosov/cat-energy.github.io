@@ -13,7 +13,7 @@
     padding: 20px;
     margin-bottom: 20px;
 
-    background-color: #f2f2f2;
+    background-color: $second-color;
   }
   .catalog-categories__title {
     position: relative;
@@ -120,7 +120,7 @@
 
     margin-bottom: 30px;
 
-    background-color: #f2f2f2;
+    background-color: $second-color;
   }
   .catalog-categories__title {
     position: relative;
@@ -210,6 +210,9 @@
 
 @media (min-width: $desktop-width) {
   .catalog-categories {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 270px;
   }
   .catalog-categories__list {
@@ -226,7 +229,7 @@
     padding-left: 54px;
     padding-right: 54px;
 
-    background-color: #f2f2f2;
+    background-color: $second-color;
   }
   .catalog-categories__title {
     position: relative;

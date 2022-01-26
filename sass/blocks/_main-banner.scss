@@ -108,6 +108,10 @@
 @media (min-width: $desktop-width) {
   .main-banner {
     position: relative;
+
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .main-banner__title {
     padding: 0;
