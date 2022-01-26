@@ -13,7 +13,7 @@
     .page-header__logoname {
         position: absolute;
         left: 50%;
-        margin-left: -50px;
+        transform: translate(-50%, 0);
         top: 24px;
     }    
 }
