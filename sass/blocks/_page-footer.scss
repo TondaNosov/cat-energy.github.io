@@ -13,11 +13,22 @@
     
     background-color: $second-color;
   }
-  .page-footer__logo {
-    display: block;
+  .page-footer__logo-wpap {
     padding-bottom: 30px;
+    text-align: center;
 
     border-bottom: 1px solid #dadada;
+  }
+  .page-footer__logo {
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.6;
+    }
   }
   .page-footer__social {
     padding-top: 24px;
@@ -52,6 +63,13 @@
     align-items: center;
 
     width: 162px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.6;
+    }
   }
   .page-footer__copyright {
     display: flex;
@@ -83,6 +101,13 @@
     align-items: center;
 
     width: 162px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.6;
+    }
   }
   .page-footer__copyright {
     display: flex;

@@ -4,12 +4,13 @@
         margin-left: auto;
         margin-right: auto;
     } 
-    .page-header__wrapper {
-        height: 65px;
+    .page-header__logo {
+        display: block;
 
+        height: 65px;
         padding-left: 20px;
         padding-top: 11px;
-    } 
+    }
     .page-header__logoname {
         position: absolute;
         left: 50%;
@@ -30,8 +31,22 @@
 
         padding-top: 24px;
     }
+    .page-header__logo {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            opacity: 0.8;
+        }
+        &:active {
+            opacity: 0.6;
+        }
+    }
     .page-header__logoname {
-        display: none;
+        width: 86px;
+        height: auto;
+
+        margin-left: 18px;
     }
 }
 
@@ -47,7 +62,21 @@
 
         padding-top: 54px;
     }
+    .page-header__logo {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            opacity: 0.8;
+        }
+        &:active {
+            opacity: 0.6;
+        }
+    }
     .page-header__logoname {
-        display: none;
+        width: 120px;
+        height: auto;
+
+        margin-left: 12px;
     }
 }

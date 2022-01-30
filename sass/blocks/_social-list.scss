@@ -21,6 +21,18 @@
   .social-list__link svg circle {
     fill: #666666;
   }
+
+  .social-list__link:hover svg,
+  .social-list__link:hover svg path,
+  .social-list__link:hover svg circle {
+    fill: $main-color;
+  }
+  .social-list__link:active svg,
+  .social-list__link:active svg path,
+  .social-list__link:active svg circle {
+    fill: $main-color;
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
@@ -57,6 +69,17 @@
   .social-list__link svg circle {
     fill: #666666;
   }
+  .social-list__link:hover svg,
+  .social-list__link:hover svg path,
+  .social-list__link:hover svg circle {
+    fill: $main-color;
+  }
+  .social-list__link:active svg,
+  .social-list__link:active svg path,
+  .social-list__link:active svg circle {
+    fill: $main-color;
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -92,5 +115,16 @@
   .social-list__link svg path,
   .social-list__link svg circle {
     fill: #666666;
+  }
+  .social-list__link:hover svg,
+  .social-list__link:hover svg path,
+  .social-list__link:hover svg circle {
+    fill: $main-color;
+  }
+  .social-list__link:active svg,
+  .social-list__link:active svg path,
+  .social-list__link:active svg circle {
+    fill: $main-color;
+    opacity: 0.5;
   }
 }
