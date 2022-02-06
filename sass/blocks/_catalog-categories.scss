@@ -158,12 +158,12 @@
   }
   .catalog-categories__title--slim::after {
     left: 430px;
-    top: 5px;
+    top: 15px;
 
-    width: 140px;
-    height: 194px;
+    width: 160px;
+    height: 222px;
 
-    background-image: url(../../img/cat_stand_big.png);
+    background-image: url(../../svg/cat-1.svg);
   }
   .catalog-categories__title--pro::after {
     left: 360px;
@@ -172,7 +172,7 @@
     width: 268px;
     height: 112px;
 
-    background-image: url(../../img/cat_go_big.png);
+    background-image: url(../../svg/cat-2.svg);
   }
     .catalog-categories__text {
     margin: 0;
@@ -273,23 +273,23 @@
     background-repeat: no-repeat;
   }
   .catalog-categories__title--slim::after {
-    left: 17px;
-    top: -32px;
+    left: 15px;
+    top: -30px;
 
-    width: 70px;
-    height: 97px;
+    width: 80px;
+    height: 134px;
 
-    background-image: url(../../img/cat_stand_big.png);
+    background-image: url(../../svg/cat-1.svg);
     background-size: contain;
   }
   .catalog-categories__title--pro::after {
-    left: -17px;
+    left: -23px;
     top: -5px;
 
     width: 134px;
     height: 56px;
 
-    background-image: url(../../img/cat_go_big.png);
+    background-image: url(../../svg/cat-2.svg);
     background-size: contain;
 
   }

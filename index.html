@@ -95,30 +95,57 @@
 
       <section class="example">
         <h2 class="example__title">Живой пример</h2>
-        <div class="example__wrap">
-          <div class="expample__container">
-            <p class="example__text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. 
-            </p>
-            <dl class="example__info-list">
-              <div class="example__info-container">
-                <div class="example__info-wrap">
-                  <dt class="example__info-title">5 кг</dt>
-                  <dd class="example__info-desc">снижение веса</dd>
+        
+        <div class="example__flexbox">
+
+          <div class="example__wrap">
+            <div class="expample__container">
+              <p class="example__text">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. 
+              </p>
+              <dl class="example__info-list">
+                <div class="example__info-container">
+                  <div class="example__info-wrap">
+                    <dt class="example__info-title">5 кг</dt>
+                    <dd class="example__info-desc">снижение веса</dd>
+                  </div>
+                  <div class="example__info-wrap">
+                    <dt class="example__info-title">60 дней</dt>
+                    <dd class="example__info-desc">затрачено времени</dd>
+                  </div>
                 </div>
-                <div class="example__info-wrap">
-                  <dt class="example__info-title">60 дней</dt>
-                  <dd class="example__info-desc">затрачено времени</dd>
+                <div class="example__info-wrap--atype">
+                  <dd class="example__info-desc--atype">Затраты на питание:</dd>
+                  <dt class="example__info-title--atype">15 000 руб.</dt>
                 </div>
-              </div>
-              <div class="example__info-wrap--atype">
-                <dd class="example__info-desc--atype">Затраты на питание:</dd>
-                <dt class="example__info-title--atype">15 000 руб.</dt>
-              </div>
-            </dl>
+              </dl>
+            </div>
           </div>
+
+          <div class="example__galery galery">
+            <div class="galery__container">
+              <div class="galery__container-img galery__container-img--after">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/after-desktop@1x.png" width="690" height="517">
+                  <img class="galery__image galery__image--after" src="img/after-mobile@1x.png" width="320" height="240">
+                </picture>
+              </div>
+              <div class="galery__container-img galery__container-img--before">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/before-desktop@1x.png" width="690" height="517">
+                  <img class="galery__image galery__image--before" src="img/before-mobile@1x.png" width="320" height="240">
+                </picture>
+              </div>
+            </div>
+            <div class="galery__slider-box">
+              <label class="galery__slider-label" for="galery__slider">Было</label>
+              <input class="galery__slider" type="range" min="0" max="100" value="50" name="galery__slider" id="galery__slider"> 
+              <label class="galery__slider-label" for="galery__slider">Стало</label>
+            </div>
+          </div>
+
         </div>
-        <!-- Form part -->
+
       </section>
 
       <section class="contacts">
@@ -203,6 +230,20 @@
         </div>  
       </div>
     </footer>
+
+    <script>
+
+      // SLIDER
+
+      let galerySlider = document.querySelector(".galery__slider");
+      let galeryImageBefore = document.querySelector(".galery__container-img--before");
+      let galeryImageAfter = document.querySelector(".galery__container-img--after");
+
+      galerySlider.addEventListener("input", function() {
+        galeryImageAfter.style.width =  `${galerySlider.value}%`;
+        galeryImageBefore.style.width = 100 - `${galerySlider.value}` + "%";
+      });
+    </script>
 
   </body>
 </html>
