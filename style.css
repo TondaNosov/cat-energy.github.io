@@ -553,14 +553,14 @@ body {
     top: -8px;
     width: 41px;
     height: 49px;
-    background-image: url(../../svg/cat-1.svg);
+    background-image: url(svg/cat-1.svg);
   }
   .catalog-categories__title--pro::after {
     left: -8px;
     top: 6px;
     width: 67px;
     height: 28px;
-    background-image: url(../../svg/cat-2.svg);
+    background-image: url(svg/cat-2.svg);
   }
   .catalog-categories__text {
     margin: 0;
@@ -591,7 +591,7 @@ body {
     position: absolute;
     top: 8px;
     right: 0px;
-    background-image: url(../../svg/icon-right-arrow.svg);
+    background-image: url(svg/icon-right-arrow.svg);
     background-repeat: no-repeat;
   }
 }
@@ -645,14 +645,14 @@ body {
     top: 15px;
     width: 160px;
     height: 222px;
-    background-image: url(../../svg/cat-1.svg);
+    background-image: url(svg/cat-1.svg);
   }
   .catalog-categories__title--pro::after {
     left: 360px;
     top: 65px;
     width: 268px;
     height: 112px;
-    background-image: url(../../svg/cat-2.svg);
+    background-image: url(svg/cat-2.svg);
   }
   .catalog-categories__text {
     margin: 0;
@@ -684,7 +684,7 @@ body {
     position: absolute;
     top: 10px;
     right: 0px;
-    background-image: url(../../svg/icon-right-arrow.svg);
+    background-image: url(svg/icon-right-arrow.svg);
     background-repeat: no-repeat;
   }
 }
@@ -750,7 +750,7 @@ body {
     top: -30px;
     width: 80px;
     height: 134px;
-    background-image: url(../../svg/cat-1.svg);
+    background-image: url(svg/cat-1.svg);
     background-size: contain;
   }
   .catalog-categories__title--pro::after {
@@ -758,7 +758,7 @@ body {
     top: -5px;
     width: 134px;
     height: 56px;
-    background-image: url(../../svg/cat-2.svg);
+    background-image: url(svg/cat-2.svg);
     background-size: contain;
   }
   .catalog-categories__text {
@@ -791,7 +791,7 @@ body {
     position: absolute;
     top: 10px;
     right: 0px;
-    background-image: url(../../svg/icon-right-arrow.svg);
+    background-image: url(svg/icon-right-arrow.svg);
     background-repeat: no-repeat;
   }
 }
