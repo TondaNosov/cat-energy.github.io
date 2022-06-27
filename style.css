@@ -47,7 +47,7 @@ body {
 
 @media (min-width: 1250px) {
   body {
-    background-image: url(../img/index-background-desktop.jpg);
+    background-image: url(img/index-background-desktop.jpg);
     background-repeat: no-repeat;
     background-position: 50vw 0;
   }
@@ -339,7 +339,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    background-image: url(../../img/index-background-mobile.jpg);
+    background-image: url(img/index-background-mobile.jpg);
     background-position: center 0;
     background-repeat: no-repeat;
   }
@@ -840,28 +840,28 @@ body {
     left: 0px;
     width: 60px;
     height: 60px;
-    background-image: url(../../img/eco-icon.png);
+    background-image: url(img/eco-icon.png);
   }
   .advantages__item--format::after {
     top: -2px;
     left: 0px;
     width: 60px;
     height: 60px;
-    background-image: url(../../img/format-icon.png);
+    background-image: url(img/format-icon.png);
   }
   .advantages__item--food::after {
     top: -2px;
     left: 0px;
     width: 60px;
     height: 60px;
-    background-image: url(../../img/food-icon.png);
+    background-image: url(img/food-icon.png);
   }
   .advantages__item--time::after {
     top: -2px;
     left: 0px;
     width: 60px;
     height: 60px;
-    background-image: url(../../img/time-icon.png);
+    background-image: url(img/time-icon.png);
   }
 }
 
@@ -932,28 +932,28 @@ body {
     left: 0px;
     width: 80px;
     height: 80px;
-    background-image: url(../../img/eco-icon.png);
+    background-image: url(img/eco-icon.png);
   }
   .advantages__item--format::after {
     top: 0px;
     left: 0px;
     width: 80px;
     height: 80px;
-    background-image: url(../../img/format-icon.png);
+    background-image: url(img/format-icon.png);
   }
   .advantages__item--food::after {
     top: 0px;
     left: 0px;
     width: 80px;
     height: 80px;
-    background-image: url(../../img/food-icon.png);
+    background-image: url(img/food-icon.png);
   }
   .advantages__item--time::after {
     top: 0px;
     left: 0px;
     width: 80px;
     height: 80px;
-    background-image: url(../../img/time-icon.png);
+    background-image: url(img/time-icon.png);
   }
 }
 
@@ -1028,28 +1028,28 @@ body {
     left: 0px;
     width: 80px;
     height: 80px;
-    background-image: url(../../img/eco-icon.png);
+    background-image: url(img/eco-icon.png);
   }
   .advantages__item--format::after {
     top: 0px;
     left: 0px;
     width: 80px;
     height: 80px;
-    background-image: url(../../img/format-icon.png);
+    background-image: url(img/format-icon.png);
   }
   .advantages__item--food::after {
     top: 0px;
     left: 0px;
     width: 80px;
     height: 80px;
-    background-image: url(../../img/food-icon.png);
+    background-image: url(img/food-icon.png);
   }
   .advantages__item--time::after {
     top: 0px;
     left: 0px;
     width: 80px;
     height: 80px;
-    background-image: url(../../img/time-icon.png);
+    background-image: url(img/time-icon.png);
   }
 }
 
