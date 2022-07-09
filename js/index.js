@@ -34,7 +34,7 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     mapId: "91f011b3a5d9f2e",
     center: { lat: 50.075389063382566, lng: 14.436260266094148 },
-    zoom: 15,
+    zoom: 16,
   });
 
   new google.maps.Marker({
@@ -42,7 +42,7 @@ function initMap() {
     map,
     title: "Cat Energy",
     icon: {
-      url: "../img/map-pin.png",
+      url: "img/map-pin.png",
       scaledSize: new google.maps.Size(56, 53),
     }
   });
